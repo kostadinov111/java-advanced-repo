@@ -1,4 +1,0 @@
-123
-456
-local-repo 222
-remote-repo 111
