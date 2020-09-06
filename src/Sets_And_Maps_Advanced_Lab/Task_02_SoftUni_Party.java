@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-public class Task02_SoftUni_Party {
+public class Task_02_SoftUni_Party {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
