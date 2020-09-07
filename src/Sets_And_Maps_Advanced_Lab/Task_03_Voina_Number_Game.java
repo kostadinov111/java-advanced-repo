@@ -13,8 +13,8 @@ public class Task_03_Voina_Number_Game {
         Set<Integer> deckPlayer1 = new LinkedHashSet<>();
         Set<Integer> deckPlayer2 = new LinkedHashSet<>();
 
-        fillDeck(sc, deckPlayer1);
-        fillDeck(sc, deckPlayer2);
+        readDeck(sc, deckPlayer1);
+        readDeck(sc, deckPlayer2);
 
         String output = battleWithDecks(deckPlayer1, deckPlayer2);
         System.out.println(output);
@@ -70,7 +70,7 @@ public class Task_03_Voina_Number_Game {
 
     }
 
-    private static void fillDeck(Scanner sc, Set<Integer> deckPlayer) {
+    private static void readDeck(Scanner sc, Set<Integer> deckPlayer) {
         int[] deck = Arrays.stream(sc.nextLine().split("\\s+")).mapToInt(Integer::parseInt).toArray();
         for (int card : deck) {
             deckPlayer.add(card);
