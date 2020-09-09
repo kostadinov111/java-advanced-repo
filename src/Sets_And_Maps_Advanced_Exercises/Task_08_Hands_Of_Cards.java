@@ -46,6 +46,7 @@ public class Task_08_Hands_Of_Cards {
                 int secondSymbol = getCardValue(card, cardsAndTypesValues, ++powerOrType);
                 points += (firstSymbol * secondSymbol);
             }
+            
             output.append(points).append("\n");
 
         }
