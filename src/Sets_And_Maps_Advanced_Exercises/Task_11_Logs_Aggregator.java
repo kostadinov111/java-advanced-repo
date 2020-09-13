@@ -26,13 +26,15 @@ public class Task_11_Logs_Aggregator {
                             .stream()
                             .mapToInt(Integer::intValue)
                             .sum();
+
                     output.append(String.format("%s: %d [", key, sumDuration));
+
                     value
-                            .forEach((k, v) -> {
-                                output.append(String.format("%s, ", k));
-                            });
-                    int lastAddedSpace = output.length();
-                    output.replace(lastAddedSpace - 2, lastAddedSpace, "]").append("\n");
+                            .keySet()
+                            .forEach(k ->  output.append(String.format("%s, ", k)));
+
+                    int lastAddedCommaAndSpace = output.length();
+                    output.replace(lastAddedCommaAndSpace - 2, lastAddedCommaAndSpace, "]").append("\n");
                 });
 
         System.out.println(output);
