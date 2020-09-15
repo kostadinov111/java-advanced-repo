@@ -38,7 +38,7 @@ public class Task_03_Maximum_Element {
                 }
                 break;
                 default:
-                    throw new IllegalStateException("Unknown value of token[0] -> " + tokens[0]);
+                    throw new IllegalStateException("Unknown value of tokens[0] -> " + tokens[0]);
             }
         }
 
