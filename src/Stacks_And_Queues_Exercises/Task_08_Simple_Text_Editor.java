@@ -39,7 +39,7 @@ public class Task_08_Simple_Text_Editor {
                 break;
                 case "3": {
                     int index = Integer.parseInt(tokens[1]);
-                    System.out.println(String.format("%c", text.charAt(index - 1)));
+                    System.out.println(String.format("%c", text.charAt(--index)));
                 }
                 break;
                 case "4": {
