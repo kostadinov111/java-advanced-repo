@@ -33,7 +33,7 @@ public class Task_08_Simple_Text_Editor {
                 break;
                 case "2": {
                     int count = Integer.parseInt(tokens[1]);
-                    text = text.substring(0, text.toString().length() - count);
+                    text = text.substring(0, text.length() - count);
                     commandsLog.push(text);
                 }
                 break;
