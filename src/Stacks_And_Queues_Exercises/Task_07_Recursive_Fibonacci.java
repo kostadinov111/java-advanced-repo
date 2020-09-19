@@ -1,35 +1,25 @@
 package Stacks_And_Queues_Exercises;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
 import java.util.Scanner;
 
 public class Task_07_Recursive_Fibonacci {
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        Deque<Long> recursiveFibonacci = new ArrayDeque<>();
+        int n = Integer.parseInt(sc.nextLine());
+        long[] memoryRecursiveFibonacci = new long[n + 1];
 
-        recursiveFibonacci.push(1L);
-        recursiveFibonacci.push(1L);
-
-        long number = Long.parseLong(sc.nextLine());
-        printRecursiveFibonacci(number, recursiveFibonacci);
+        long result = recursiveFibonacci(n, memoryRecursiveFibonacci);
+        System.out.println(result);
 
     }
 
-    private static void printRecursiveFibonacci(long number, Deque<Long> recursiveFibonacci) {
-        for (int i = 0; i < number - 1; i++) {
-            long num1 = recursiveFibonacci.pop();
-            long num2 = recursiveFibonacci.pop();
-            long num3 = num1 + num2;
+    private static long recursiveFibonacci(int n, long[] memoryRecursiveFibonacci) {
+        if (n <= 1) return 1;
+        if (memoryRecursiveFibonacci[n] != 0) return memoryRecursiveFibonacci[n];
+        return memoryRecursiveFibonacci[n] = recursiveFibonacci(n - 1, memoryRecursiveFibonacci) + recursiveFibonacci(n - 2, memoryRecursiveFibonacci);
 
-            recursiveFibonacci.push(num2);
-            recursiveFibonacci.push(num1);
-            recursiveFibonacci.push(num3);
-        }
-
-        System.out.println(recursiveFibonacci.peek());
     }
 }
