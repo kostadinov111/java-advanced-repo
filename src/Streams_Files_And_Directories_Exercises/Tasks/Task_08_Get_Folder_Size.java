@@ -27,7 +27,7 @@ public class Task_08_Get_Folder_Size {
             if (file.isFile()) {
                 len += file.length();
             } else {
-                folderSize(file);
+                len += folderSize(file);
             }
 
         }
