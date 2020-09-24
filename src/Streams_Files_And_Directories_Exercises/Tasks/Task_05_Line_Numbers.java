@@ -10,6 +10,7 @@ public class Task_05_Line_Numbers {
 
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(inputPath));
              PrintWriter printWriter = new PrintWriter(new FileOutputStream(outputPath))) {
+
             int index = 0;
 
             String line = bufferedReader.readLine();
