@@ -11,7 +11,7 @@ public class Task_01_Read_File {
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(inputPath));
              PrintWriter printWriter = new PrintWriter(new FileOutputStream(outputPath))) {
 
-            
+            //TODO
 
         } catch (IOException e) {
             e.printStackTrace();
