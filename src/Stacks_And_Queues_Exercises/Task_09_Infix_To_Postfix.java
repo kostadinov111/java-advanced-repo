@@ -50,8 +50,7 @@ public class Task_09_Infix_To_Postfix {
             }
         }
 
-        System.out.print(String.join(" ", output));
-        System.out.print(" ");
+        System.out.print(String.join(" ", output) + " ");
         System.out.println(String.join(" ", operators));
 
     }
