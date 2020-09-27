@@ -19,6 +19,7 @@ public class Task_11_Serialize_Custom_Object {
         public int getNumberOfStudents() {
             return this.numberOfStudents;
         }
+
     }
 
     public static void main(String[] args) throws ClassNotFoundException {
