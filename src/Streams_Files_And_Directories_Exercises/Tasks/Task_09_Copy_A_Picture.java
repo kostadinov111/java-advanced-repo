@@ -11,8 +11,8 @@ public class Task_09_Copy_A_Picture {
         try (FileInputStream fileInputStream = new FileInputStream(inputPath);
              FileOutputStream fileOutputStream = new FileOutputStream(outputPath)) {
 
-            byte[] copeBytes = fileInputStream.readAllBytes();
-            fileOutputStream.write(copeBytes);
+            byte[] copyBytes = fileInputStream.readAllBytes();
+            fileOutputStream.write(copyBytes);
 
 
         } catch (IOException e) {
