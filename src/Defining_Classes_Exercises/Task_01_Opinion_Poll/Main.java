@@ -1,4 +1,4 @@
-package Defining_Classes_Exercises;
+package Defining_Classes_Exercises.Task_01_Opinion_Poll;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -9,22 +9,22 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        List<Person> persons = new ArrayList<>();
+        List<Defining_Classes_Exercises.Task_01_Opinion_Poll.Person> persons = new ArrayList<>();
 
         readPersonsList(sc, persons);
         printFilteredPersonsList(persons);
 
     }
 
-    private static void printFilteredPersonsList(List<Person> persons) {
+    private static void printFilteredPersonsList(List<Defining_Classes_Exercises.Task_01_Opinion_Poll.Person> persons) {
         persons
                 .stream()
                 .filter(person -> person.getAge() > 30)
-                .sorted(Comparator.comparing(Person::getName))
+                .sorted(Comparator.comparing(Defining_Classes_Exercises.Task_01_Opinion_Poll.Person::getName))
                 .forEach(System.out::println);
     }
 
-    private static void readPersonsList(Scanner sc, List<Person> persons) {
+    private static void readPersonsList(Scanner sc, List<Defining_Classes_Exercises.Task_01_Opinion_Poll.Person> persons) {
         int n = Integer.parseInt(sc.nextLine());
 
         while (n-- > 0) {

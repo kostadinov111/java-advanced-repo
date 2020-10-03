@@ -1,4 +1,4 @@
-package Defining_Classes_Exercises;
+package Defining_Classes_Exercises.Task_01_Opinion_Poll;
 
 public class Person {
     private String name;
@@ -21,4 +21,5 @@ public class Person {
     public String toString() {
         return String.format("%s - %d", this.getName(), this.getAge());
     }
+
 }
