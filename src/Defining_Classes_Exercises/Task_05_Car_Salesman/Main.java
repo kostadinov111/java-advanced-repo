@@ -12,7 +12,6 @@ public class Main {
         readEnginesInput(sc, engines);
         readCarsInput(sc, engines, cars);
         printCarsInfo(cars);
-        System.out.println();
 
     }
 
